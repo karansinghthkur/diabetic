@@ -4,4 +4,3 @@ matplotlib
 pandas
 numpy
 scikit_learn
-python3-dev
