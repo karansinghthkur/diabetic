@@ -42,7 +42,7 @@ dataset = pd.read_csv('diabetes.csv')
 # In[13]:
 
 
-dataset_X = dataset.iloc[:,[1, 2, 3, 4, 5, 6]].values
+dataset_X = dataset.iloc[:,[1, 4, 5, 2, 3, 6]].values
 dataset_Y = dataset.iloc[:,8].values
 
 
@@ -117,8 +117,8 @@ Y_pred = ranfor.predict(X_test)
 
 
 
-pickle.dump(ranfor, open('diabeticmodel.pkl','wb'))
-model = pickle.load(open('diabeticmodel.pkl','rb'))
+pickle.dump(ranfor, open('diabetesmd_model.pkl','wb'))
+model = pickle.load(open('diabetesmd_model','rb'))
 #print(model.predict(sc.transform(np.array([[86, 66, 26.6, 31]]))))
 
 

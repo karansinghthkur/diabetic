@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('diabeticmodel.pkl', 'rb'))
+model = pickle.load(open('diabetesmd_model.pkl', 'rb'))
 
 dataset = pd.read_csv('diabetes.csv')
 
